@@ -1,0 +1,17 @@
+# Node
+node_modules
+*.log
+npm-debug.log*
+
+# OS Files
+*.db
+*.desktop
+.directory
+.DS_Store
+*.swp
+*.tmp
+*.lnk
+
+# Obsidian
+build
+doc/yuidoc/

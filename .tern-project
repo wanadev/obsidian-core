@@ -1,0 +1,13 @@
+{
+  "ecmaVersion": 6,
+  "loadEagerly": [
+    "./app/js/index.js"
+  ],
+  "libs": [
+    "browser"
+  ],
+  "plugins": {
+    "node": {},
+    "abitbol": {}
+  }
+}

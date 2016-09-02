@@ -1,0 +1,50 @@
+{
+  "name": "obsidian-core",
+  "version": "0.0.0",
+  "description": "Obsidian Framework core libraries",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "obsidian"
+  ],
+  "author": "Wanadev <http://www.wanadev.fr/>",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wanadev/obsidian-core.git"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "abitbol": "^1.1.0",
+    "lodash": "^4.15.0",
+    "raven-js": "^3.6.1",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "expect.js": "^0.3.1",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-yuidoc": "^1.0.0",
+    "grunt-mocha-phantomjs": "^4.0.0",
+    "mocha": "^3.0.2"
+  }
+}
