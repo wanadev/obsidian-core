@@ -1,5 +1,7 @@
 # Obsidian Core
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/wanadev/obsidian-core.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/wanadev/obsidian-core.svg?branch=master)](https://travis-ci.org/wanadev/obsidian-core)
 [![NPM Version](http://img.shields.io/npm/v/obsidian-core.svg?style=flat)](https://www.npmjs.com/package/obsidian-core)
 [![License](http://img.shields.io/npm/l/obsidian-core.svg?style=flat)](https://github.com/wanadev/obsidian-core/blob/master/LICENSE)
