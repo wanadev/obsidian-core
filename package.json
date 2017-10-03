@@ -45,6 +45,6 @@
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-yuidoc": "^1.0.0",
     "grunt-mocha-phantomjs": "^4.0.0",
-    "mocha": "^3.0.2"
+    "mocha": "^4.0.0"
   }
 }
