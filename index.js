@@ -4,8 +4,8 @@ const MainLoop = require("./lib/mainloop");
 const Debug = require("./lib/debug");
 
 module.exports = {
-  CallbackManager,
-  ConfigStorage,
-  MainLoop,
-  Debug
+    CallbackManager,
+    ConfigStorage,
+    MainLoop,
+    Debug
 };
