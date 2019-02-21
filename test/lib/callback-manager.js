@@ -190,6 +190,30 @@ describe("obsidian-core/lib/callback-manager", function() {
             expect(cb2Called).to.be.ok();
             expect(cb3Called).not.to.be.ok();
         });
+
+        it("stops only the call of the current callback stack", function() {
+            var cm = new CallbackManager("ev1", "ev2");
+            var ev1cb1Called = false;
+            var ev1cb2Called = false;
+            var ev2cb1Called = false;
+            var ev2cb2Called = false;
+
+            cm.add("ev1", {o: 1}, function() { 
+                ev1cb1Called = true; 
+                cm.call("ev2", [], {orderBy: "o"}); 
+            });
+            cm.add("ev1", {o: 2}, function() { ev1cb2Called = true; });
+
+            cm.add("ev2", {o: 1}, function() { ev2cb1Called = true; cm.stop(); });
+            cm.add("ev2", {o: 2}, function() { ev2cb2Called = true; });
+
+            cm.call("ev1", [], {orderBy: "o"});
+
+            expect(ev1cb1Called).to.be.ok();
+            expect(ev2cb1Called).to.be.ok();
+            expect(ev2cb2Called).not.to.be.ok();
+            expect(ev1cb2Called).to.be.ok();
+        });
     });
 
     describe("callbacks", function() {
