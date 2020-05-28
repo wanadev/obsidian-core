@@ -34,7 +34,7 @@
         "uuid": "^3.3.3"
     },
     "devDependencies": {
-        "@babel/core": "^7.6.2",
+        "@babel/core": "^7.10.1",
         "@babel/preset-env": "^7.6.2",
         "babelify": "^10.0.0",
         "expect.js": "^0.3.1",
