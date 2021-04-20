@@ -28,7 +28,7 @@
         ]
     },
     "dependencies": {
-        "@sentry/browser": "^5.7.0",
+        "@sentry/browser": "^6.2.5",
         "abitbol": "^2.0.0",
         "lodash": "^4.17.15",
         "uuid": "^3.3.3"
