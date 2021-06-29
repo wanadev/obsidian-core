@@ -29,8 +29,10 @@
     },
     "dependencies": {
         "@sentry/browser": "^6.2.5",
+        "@sentry/rrweb": "^0.3.1",
         "abitbol": "^2.0.0",
         "lodash": "^4.17.15",
+        "rrweb": "^0.9.14",
         "uuid": "^3.3.3"
     },
     "devDependencies": {
