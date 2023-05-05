@@ -7,4 +7,5 @@ Gruntfile.js
 .gitignore
 .jshintrc
 .tern-project
-.travis.yml
+RELEASE.rst
+.github
