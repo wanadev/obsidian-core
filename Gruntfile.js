@@ -56,9 +56,11 @@ module.exports = function(grunt) {
             }
         },
 
-        mocha_phantomjs: {
-            all: ["build/test/index.html"]
-        }
+        shell: {
+            mocha_headless_chrome: {
+                command: "npx mocha-headless-chrome -f build/test/index.html",
+            }
+        },
 
     });
 
@@ -67,11 +69,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-browserify");
     grunt.loadNpmTasks("grunt-contrib-yuidoc");
     grunt.loadNpmTasks("grunt-contrib-jshint");
-    grunt.loadNpmTasks("grunt-mocha-phantomjs");
+    grunt.loadNpmTasks("grunt-shell");
 
     grunt.registerTask("default", ["test"]);
 
     grunt.registerTask("build-tests", "Build the tests", ["clean:tests", "copy:tests", "browserify:tests"]);
 
-    grunt.registerTask("test", "Run all code quality checks and unit tests", ["jshint", "build-tests", "mocha_phantomjs"]);
+    grunt.registerTask("test", "Run all code quality checks and unit tests", ["jshint", "build-tests", "shell:mocha_headless_chrome"]);
 };
