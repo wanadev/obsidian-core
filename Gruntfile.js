@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         },
 
         shell: {
-            mocha_chrome: {
+            mocha_headless_chrome: {
                 command: "npx mocha-headless-chrome -f build/test/index.html",
             }
         },
@@ -75,5 +75,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask("build-tests", "Build the tests", ["clean:tests", "copy:tests", "browserify:tests"]);
 
-    grunt.registerTask("test", "Run all code quality checks and unit tests", ["jshint", "build-tests", "shell:mocha_chrome"]);
+    grunt.registerTask("test", "Run all code quality checks and unit tests", ["jshint", "build-tests", "shell:mocha_headless_chrome"]);
 };
