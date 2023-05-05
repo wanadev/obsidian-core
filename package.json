@@ -1,6 +1,6 @@
 {
     "name": "obsidian-core",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Obsidian Framework core libraries",
     "main": "index.js",
     "scripts": {

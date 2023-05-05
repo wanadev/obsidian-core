@@ -52,3 +52,7 @@ Tu run tests, use the following command:
 
     * Nothing yet ;)
 
+* **v1.4.1:**
+
+    * Updated dependencies (@jbghoul, #44)
+    * Replaced deprecated mocha-phantomjs by mocha-headless-chrome to run tests (@jbghoul, #44)
