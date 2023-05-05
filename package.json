@@ -46,6 +46,6 @@
         "grunt-contrib-yuidoc": "^1.0.0",
         "grunt-shell": "^4.0.0",
         "mocha": "^5.2.0",
-        "mocha-chrome": "^2.2.0"
+        "mocha-headless-chrome": "^4.0.0"
     }
 }

@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 
         shell: {
             mocha_chrome: {
-                command: "npx mocha-chrome build/test/index.html",
+                command: "npx mocha-headless-chrome -f build/test/index.html",
             }
         },
 
