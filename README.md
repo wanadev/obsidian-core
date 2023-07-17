@@ -50,7 +50,7 @@ Tu run tests, use the following command:
 
 * **[NEXT]** (changes on master that have not been released yet):
 
-    * Nothing yet ;)
+    * Updated dev dependencies (@dependabot, #59, #61)
 
 * **v1.4.1:**
 
