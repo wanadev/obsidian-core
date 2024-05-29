@@ -1,8 +1,6 @@
 import Class from "abitbol";
 import type CallbackManager from "./callback-manager";
 
-// TODO throw errors for console.error()
-
 interface Log {
     type: string;
     message: string;
