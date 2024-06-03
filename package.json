@@ -3,6 +3,13 @@
     "version": "1.4.1",
     "description": "Obsidian Framework core libraries",
     "main": "index.js",
+    "types": "types/index.d.ts",
+    "typesVersions": {
+        "*": {
+            "lib/*": ["types/lib/*"],
+            "helpers/*": ["types/helpers/*"]
+        }
+    },
     "scripts": {
         "test": "grunt test"
     },
