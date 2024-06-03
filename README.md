@@ -52,6 +52,11 @@ Tu run tests, use the following command:
 
     * Updated dev dependencies (@dependabot, #59, #61)
 
+* **v1.4.2:**
+
+    * feat: Added TypeScript type declaration (@Pduhard, #112)
+    * misc: Updated dev dependencies (@dependabot)
+
 * **v1.4.1:**
 
     * Updated dependencies (@jbghoul, #44)
