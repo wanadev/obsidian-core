@@ -1,9 +1,9 @@
 "use strict";
 
 var expect = require("expect.js");
-var uuid = require("uuid");
 
 var ConfigStorage = require("../../lib/config-storage");
+const uuidHelper = require("../../helpers/uuid-helper");
 
 describe("obsidian-core/lib/config-storage", function() {
 
@@ -44,7 +44,7 @@ describe("obsidian-core/lib/config-storage", function() {
         var config = new ConfigStorage("testConfigStorage");
         config.clear();
 
-        var id = uuid.v4();
+        var id = uuidHelper.uuid4();
         config.set("id", id);
 
         setTimeout(function() {
