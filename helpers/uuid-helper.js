@@ -20,7 +20,7 @@ module.exports = {
      * Try to use the browser's secure implementation if available (only
      * available with HTTPS and on localhost) else use a fallback
      * implementation.
-     * @returns 
+     * @returns {string} A UUID v4 string.
      */
     uuid4: function () {
         if (_globalObject.crypto && _globalObject.crypto.randomUUID) {
