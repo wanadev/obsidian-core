@@ -50,14 +50,18 @@ Tu run tests, use the following command:
 
 * **[NEXT]** (changes on master that have not been released yet):
 
-    * Nothing yet ;)
+  * Nothing yet ;)
+
+* **v1.5.0:**
+
+  * feat: Replaced uuid dependency by browser's secure implementation (@av-wanadev, #113)
 
 * **v1.4.2:**
 
-    * feat: Added TypeScript type declaration (@Pduhard, #112)
-    * misc: Updated dev dependencies (@dependabot)
+  * feat: Added TypeScript type declaration (@Pduhard, #112)
+  * misc: Updated dev dependencies (@dependabot)
 
 * **v1.4.1:**
 
-    * Updated dependencies (@jbghoul, #44)
-    * Replaced deprecated mocha-phantomjs by mocha-headless-chrome to run tests (@jbghoul, #44)
+  * Updated dependencies (@jbghoul, #44)
+  * Replaced deprecated mocha-phantomjs by mocha-headless-chrome to run tests (@jbghoul, #44)
